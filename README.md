@@ -14,7 +14,7 @@ Packages include:
 
 ## How to execute
 
-Before, post a user with name = John and surname = Connor
+Before, ensure you have a user with name = John and surname = Connor
 
 After that, we need execute four modules:
 
