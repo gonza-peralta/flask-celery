@@ -1,4 +1,4 @@
-# Flask - Celery Example
+# Flask - Celery. HOW TO USE - Example
 
 ## Getting Started
 
@@ -14,12 +14,14 @@ Packages include:
 
 ## How to execute
 
-We need execute four modules:
+Before, post a user with name = John and surname = Connor
+
+After that, we need execute four modules:
 
 * '$> python -m app.manage' : This execute our flask app
 * 'celery -A celerytask.tasks:celery worker --loglevel=info': This execute our
   celery workers who dispatch our task
 
 Then, at the same time execute:
-* '$> python -m executertask.executer' and '$> python -m executerrequest.executer'
+* '$> python -m executertask.executer' & '$> python -m executerrequest.executer'
 

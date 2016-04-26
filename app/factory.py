@@ -10,12 +10,11 @@ from config import config
 
 
 def create_app(config_name):
-    print __name__
     app = Flask(__name__)
     app.config.from_object(config[config_name])
 
     db.init_app(app)
     # Register the blueprints
-    # -----------------
-    # -----------------
+    from appblueprint.views import externalmodule
+    app.register_blueprint(externalmodule, url_prefix='/externalmodule')
     return app

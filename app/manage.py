@@ -14,7 +14,7 @@ import json
 
 @app.route('/user', methods=['POST'])
 def create():
-    user = User(name="John", surname="Bolt")
+    user = User(name="John", surname="Connor")
     try:
         db.session.add(user)
         db.session.commit()
@@ -45,5 +45,10 @@ def get():
         users_list.append(user.to_json())
     return json.dumps(users_list)
 
-if __name__ == "__main__":
+def main():
+    print app.url_map
     app.run(debug=True)
+
+if __name__ == "__main__":
+    main()
+
