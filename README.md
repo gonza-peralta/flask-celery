@@ -1,27 +1,27 @@
-# Flask - Celery. HOW TO USE - Example
+# Flask - Celery Example
 
 ## Getting Started
 
-This code aim to show how execute flask with celery in the same app context
+This code aims to show how execute flask with celery in the same app context
 
-Packages include:
+Packages included:
 
-* app: Package that contain everything about a prototype Flask application.
+* app: Contains everything about a prototype Flask application.
   Include model, view, config, factory and populate script.
-* celerytask: This package include a celery factory and a module with task code.
-* executerrequest: That contain a executer who send put request to our app view
-* executertask: That contain a executer who send task to celery workers
+* celerytask: Includes a celery factory and a module with tasks code.
+* executerrequest: Contains an executer who sends put requests to our app view
+* executertask: Contains an executer who sends tasks to celery workers
 
 ## How to execute
 
-Before, ensure you have a user with name = John and surname = Connor
+First, ensure you have a user with name = John and surname = Connor
 
-After that, we need execute four modules:
+After that, we need to execute four modules:
 
-* '$> python -m app.manage' : This execute our flask app
-* 'celery -A celerytask.tasks:celery worker --loglevel=info': This execute our
-  celery workers who dispatch our task
+* '$> python -m app.manage' : This executes our flask app
+* 'celery -A celerytask.tasks:celery worker --loglevel=info': This executes our
+  celery workers who dispatches our task
 
-Then, at the same time execute:
+Then, at the same time, execute:
 * '$> python -m executertask.executer' & '$> python -m executerrequest.executer'
 
