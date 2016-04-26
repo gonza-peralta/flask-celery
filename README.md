@@ -2,15 +2,16 @@
 
 ## Getting Started
 
-This code aim to show how execute flask with celery in the same app context
+This code aims to show how execute flask with celery in the same app context
 
 Packages include:
 
 * app: Package that contain everything about a prototype Flask application.
   Include model, view, config, factory and populate script.
 * celerytask: This package include a celery factory and a module with task code.
-* executerrequest: That contain a executer who send put request to our app view
-* executertask: That contain a executer who send task to celery workers
+* executerrequest: That contain an executor who send put requests to our
+  application view.
+* executertask: That contain an executor who send task to celery workers.
 
 ## How to execute
 
