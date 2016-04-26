@@ -1,4 +1,4 @@
-# Flask - Celery Example
+# Flask - Celery. HOW TO USE - Example
 
 ## Getting Started
 
